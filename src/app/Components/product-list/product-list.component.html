@@ -1,0 +1,12 @@
+
+<div *ngFor="let category of allProducts">
+    <h2>{{ category.categoryName }}</h2>
+    <div *ngFor="let product of category.products">
+      <div>
+        <img src="src/app/assets/Images/ProductImages/headphone.avif" [alt]="product.productAlt" width="100">
+        <h3>{{ product.productName }}</h3>
+        <p>{{ product.productDescription }}</p>
+        <p>Price: ${{ product.productPrice }}</p>
+      </div>
+    </div>
+  </div>
